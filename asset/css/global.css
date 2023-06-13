@@ -26,10 +26,10 @@ img {
 
 .header {
     background-image: url("https://wallpaperset.com/w/full/7/2/4/187210.jpg");
-    background-position: 2rem ;
-    padding: 60px;
+    background-position: 150rem;
+    padding: 65px;
     box-shadow: 0px 5px 10px 0px rgba(255, 0, 21, 0.7);
-    border-radius: 4rem;
+    border-radius: 6rem;
     text-align: center;
     color: #ffcb05;
     text-emphasis-color: yellow;
