@@ -1,0 +1,50 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff0000;
+    
+}
+
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: 110px;
+}
+
+.content {
+    padding: 1rem;
+    background-color: darkred;
+    box-shadow: 0px 5px 10px 0px rgba(71, 0, 6, 0.664);
+
+
+    
+}
+
+.header {
+    background-image: url("https://wallpaperset.com/w/full/7/2/4/187210.jpg");
+    background-position: 2rem ;
+    padding: 60px;
+    box-shadow: 0px 5px 10px 0px rgba(255, 0, 21, 0.7);
+    border-radius: 4rem;
+    text-align: center;
+    color: #ffcb05;
+    text-emphasis-color: yellow;
+    text-shadow: 8px 9px #2a75bb;
+    font-size: 30px;
+      }
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        max-height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+
+
