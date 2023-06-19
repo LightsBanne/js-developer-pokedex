@@ -19,7 +19,6 @@ function loadPokemonItems(offset, limit) {
         <div class="myDIV">Abilities</div>
 <div class="abilities">${pokemon.abilities}</div>
 
-
     <div class="detail">
        <ol class="types">
            ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
