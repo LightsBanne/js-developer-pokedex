@@ -5,7 +5,7 @@ function converPokeApiDetailToPokemon(pokedetail) {
     pokemon.numbr = pokedetail.id
     pokemon.name = pokedetail.name
 
-    const abilities = pokemon.abilities = pokedetail.abilities.map(ability => ability.ability.name).join(',')
+    const abilities = pokemon.abilities = pokedetail.abilities.map(ability => ability.ability.name).join(' , ')
     pokemon.abilities = abilities
 
 
