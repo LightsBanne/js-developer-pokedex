@@ -1,7 +1,7 @@
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
-    list-style:none
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -103,7 +103,8 @@
     margin: 0.5rem;
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0px 5px 10px 0px rgba(255, 0, 21, 0.7);     display: flex;
+    box-shadow: 0px 5px 10px 0px rgba(255, 0, 21, 0.7);
+    display: flex;
     flex-direction: column;
 }
 
@@ -112,9 +113,9 @@
     margin-bottom: 0.25;
     text-transform: capitalize;
     text-shadow:
-    0 0 7px rgba(97, 96, 96, 0.384),
-    0 0 10px rgba(24, 23, 23, 0.952),
-    0 0 21px rgba(122, 122, 122, 0.308);
+        0 0 7px rgba(97, 96, 96, 0.384),
+        0 0 10px rgba(24, 23, 23, 0.952),
+        0 0 21px rgba(122, 122, 122, 0.308);
 
 }
 
@@ -129,9 +130,15 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.pokemon  .types .type {
+
+.pokemon .types .type {
     color: rgb(0, 0, 0);
     padding: .25rem .5rem;
     font-size: .6rem;
@@ -144,51 +151,53 @@
 
 }
 
-.pokemon .detail img {
-    
-    max-width: 100%;
+.pokemon .detail .imgPoke {
+
+    max-width: 50%;
     height: 70px;
+
 }
 
 
-.abilities  {
-    display: none;
-  }
-      
-  .myDIV {
+.myDIV {
     color: #fff;
-  text-shadow:
-    0 0 7px rgb(202, 202, 202),
-    0 0 10px rgb(179, 179, 179),
-    0 0 21px rgb(131, 130, 130);
+    text-shadow:
+        0 0 7px rgb(202, 202, 202),
+        0 0 10px rgb(179, 179, 179),
+        0 0 21px rgb(131, 130, 130);
     text-align: justify;
-    box-shadow: 0px 4px 4px 0px rgba(255, 0, 21, 0.7);
-    background-color:black;
+    background-color: black;
     padding: .25rem .5rem;
-    font-size: .8rem;
+    font-size: .6rem;
     margin: .25rem 0;
+    position: center;
     border-radius: 10rem;
     filter: brightness(1.1);
     text-align: center;
+    background-size: contain;
     text-transform: capitalize;
 
-  }
-  .myDIV:hover + .abilities {
-    display:block;
+}
+
+.abilities {
+
+    display: list-item;
+    list-style: none;
     color: whitesmoke;
     background-color: rgb(160, 0, 0);
-    padding: .25rem .5rem;
-    font-size: .650rem;
-    margin: .25rem 0;
+    padding: .20rem .5rem;
+    font-size: .620rem;
+    margin: .20rem 0;
     border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
     text-transform: capitalize;
-    
+    height: 50%;
+}
 
-
-  }
-
+.ulzasso {
+    height: auto;
+}
 
 .pagination {
     display: flex;
@@ -200,6 +209,7 @@
 }
 
 .pagination button {
+    position: static;
     background-color: #6c79db;
     border: none;
     box-shadow: 0px 5px 10px 0px rgba(255, 0, 21, 0.7);

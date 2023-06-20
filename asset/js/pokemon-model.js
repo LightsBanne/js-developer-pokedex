@@ -5,5 +5,5 @@ class Pokemon {
     types = []
     photo;
     abilities;
-    moves;
+    
 }

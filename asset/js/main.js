@@ -1,10 +1,11 @@
-
 const url = 'https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}'
 const loadmorebutton = document.getElementById('loadmorebutton')
 const pokemonList = document.getElementById('pokemonList')
 let limit = 11;
 let offset = 0;
 const maxRecords = 151
+
+
 
 
 
@@ -16,20 +17,29 @@ function loadPokemonItems(offset, limit) {
        <span class="name">${pokemon.name}</span>
         
 
-        <div class="myDIV">Abilities</div>
-<div class="abilities">${pokemon.abilities}</div>
+       
+</ol>
 
     <div class="detail">
        <ol class="types">
            ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-    
        </ol>
-       
-
-       <img src="${pokemon.photo}"
+        </div>
+ <img class="imgPoke"src="${pokemon.photo}"
        alt="${pokemon.name}">
-           </div>
-    </li>
+
+       <div class='botao'>
+<div class="myDIV"><span>Abilities</span></div>
+<div class='ulzasso'>
+<ul class="abilities">
+  ${pokemon.abilities.map((ability) =>
+    `<li class="ability">${ability}</li>`
+  ).join('')}
+</ul>
+</div>
+</div>
+
+       
     `).join('')
 
         pokemonList.innerHTML += newHTML
@@ -47,9 +57,10 @@ loadmorebutton.addEventListener('click', () => {
         const newLimit = maxRecords - offset
         loadPokemonItems(offset, newLimit)
 
-        loadmorebutton.parentElement.removeChild(loadmorebutton)
+        loadmorebutton.remove();
 
     } else {
         loadPokemonItems(offset, limit)
     }
 })
+
